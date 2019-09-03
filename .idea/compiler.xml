@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="creating-multi-project-builds.greeter.main" target="1.8" />
+      <module name="creating-multi-project-builds.greeter.test" target="1.8" />
+      <module name="creating-multi-project-builds.greeting-library.main" target="1.8" />
+      <module name="creating-multi-project-builds.greeting-library.test" target="1.8" />
+      <module name="net.cdsunrise.greeter.main" target="1.8" />
+      <module name="net.cdsunrise.greeter.test" target="1.8" />
+      <module name="net.cdsunrise.greeting-library.main" target="1.8" />
+      <module name="net.cdsunrise.greeting-library.test" target="1.8" />
+      <module name="net.cdsunrise.task.main" target="1.8" />
+      <module name="net.cdsunrise.task.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

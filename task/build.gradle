@@ -1,0 +1,75 @@
+plugins {
+    id 'java'
+}
+
+group 'net.cdsunrise'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+// 直接通过task函数去创建
+task first {
+    doLast {
+        println "first"
+    }
+}
+// 通过TaskContainer去创建
+this.tasks.create(name:'second')  {
+    doLast {
+        println "second"
+    }
+}
+/**指定多个task依赖*/
+task printVersion(dependsOn: [second, first]) {
+    doLast {
+        println "Version: $version"
+    }
+}
+task third {
+    setGroup('cdsunrise')
+    setDescription('task study')
+    doLast {
+        println "third"
+    }
+}
+/**dependsOn 添加任务之间的依赖，声明依赖时直接按名称引用task，被依赖的任务要先被执行*/
+third.dependsOn('printVersion')
+
+// 计算build时长
+def startBuildTime,endBuildTime
+this.afterEvaluate {
+    Project project ->
+        def preBuildTask = project.tasks.getByName("build")
+        preBuildTask.doFirst {
+            startBuildTime = System.currentTimeMillis()
+            println startBuildTime
+        }
+        def buildTask = project.tasks.getByName("build")
+        buildTask.doLast {
+            endBuildTime = System.currentTimeMillis()
+            println "The build task is use :${endBuildTime-startBuildTime}"
+        }
+}
+
+task print{
+    doFirst {
+        println 'this is a user task doFirst'
+    }
+    doLast {
+        println 'this is a user task doLast'
+    }
+}
+/**先添加的doFirst动作后执行，先添加的doLast动作先执行*/
+print.doFirst { println "Second action" }
+print.doFirst { println "First action" }
+print.doLast { println "Not Last action" }
+print.doLast { println "Last action" }

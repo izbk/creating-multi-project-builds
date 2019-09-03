@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.cdsunrise.creating-multi-project-builds.iml" filepath="$PROJECT_DIR$/.idea/modules/net.cdsunrise.creating-multi-project-builds.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/docs/net.cdsunrise.docs.iml" filepath="$PROJECT_DIR$/.idea/modules/docs/net.cdsunrise.docs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/greeter/net.cdsunrise.greeter.iml" filepath="$PROJECT_DIR$/.idea/modules/greeter/net.cdsunrise.greeter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/greeter/net.cdsunrise.greeter.main.iml" filepath="$PROJECT_DIR$/.idea/modules/greeter/net.cdsunrise.greeter.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/greeter/net.cdsunrise.greeter.test.iml" filepath="$PROJECT_DIR$/.idea/modules/greeter/net.cdsunrise.greeter.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/greeting-library/net.cdsunrise.greeting-library.iml" filepath="$PROJECT_DIR$/.idea/modules/greeting-library/net.cdsunrise.greeting-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/greeting-library/net.cdsunrise.greeting-library.main.iml" filepath="$PROJECT_DIR$/.idea/modules/greeting-library/net.cdsunrise.greeting-library.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/greeting-library/net.cdsunrise.greeting-library.test.iml" filepath="$PROJECT_DIR$/.idea/modules/greeting-library/net.cdsunrise.greeting-library.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.cdsunrise.task.iml" filepath="$PROJECT_DIR$/.idea/modules/net.cdsunrise.task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/task/net.cdsunrise.task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/task/net.cdsunrise.task.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/task/net.cdsunrise.task.test.iml" filepath="$PROJECT_DIR$/.idea/modules/task/net.cdsunrise.task.test.iml" />
+    </modules>
+  </component>
+</project>
